@@ -3,10 +3,7 @@ import styles from "../../styles/contact.module.css"
 import Location from "@/app/location/page"
 import { useState } from "react"
 
-export const metadata = {
-  title: 'About AHS Legal Services',
-  description: 'Legal Services Undertaken Civil Court Cases Property Documents Verification and Advice Rentals and Business Agreements Drafting Muslim Law Cases Succession & Legal Heir Certificate Cases Family Court Divorce Maintenance & Guardianship Cases Writ Petitions and other Cases of High Court Police FIR & Chargesheet Quash Bail Consumer Forum Cases Service Law Recruitment/Selection Disputes Departmental Enquiry Industrial Disputes Workman/Compensation Admission Fee Documents Return disputes with Educational Institutions and any other Legal matter and issue of notices',
-}
+
 export default function Contact() {
   const [name, setName] = useState("")
   const [phone, setPhone] = useState("")
