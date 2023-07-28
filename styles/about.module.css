@@ -1,0 +1,133 @@
+.aboutDesc {
+    color: white;
+    word-spacing: 2px;
+    line-height: 1.6;
+
+
+}
+
+.aboutMainPart {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+
+}
+
+.leftPart {
+    width: 70%;
+    margin-left: 40px;
+
+}
+
+.qua {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.aboutHead {
+    color: white;
+    text-decoration: underline;
+    background: linear-gradient(90deg, #00B894, #00D9A6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.profileImg {
+    width: 250px;
+    margin-right: 60px;
+    /* background-color: #FFFFFF; */
+    background: linear-gradient(90deg, #00B894, #00D9A6);
+    /* border: 10px solid #008000; */
+    border: 3px solid white;
+    /* border-radius: 50%; */
+    border-radius: 10px;
+    height: 300px;
+
+}
+
+.descImgDiv {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    gap: 50px;
+    align-items: center;
+}
+
+.qualificationsDiv {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+
+
+}
+
+.expertise {
+    color: white;
+    margin-left: 40px;
+    width: 50%;
+    line-height: 1.5;
+}
+
+
+.expertise ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.expertise ul li {
+    font-size: 18px;
+}
+
+@media(max-width : 1000px) {
+    .descImgDiv {
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+
+    .leftPart {
+        /* margin: 0; */
+        padding-right: 10px;
+    }
+
+    .aboutMainPart {
+        width: 100%;
+    }
+
+    .leftPart {
+        width: 90%;
+        padding-right: 10px;
+
+    }
+
+    .expertise {
+
+        width: 85%;
+    }
+
+    .expertise ul {
+        padding: 10px;
+
+    }
+
+    .profileImg {
+
+        margin: 70px auto 0 auto;
+    }
+
+    .aboutDesc {
+        margin-right: 25px;
+    }
+
+    .qualificationsDiv {
+
+        width: 80vw;
+    }
+}

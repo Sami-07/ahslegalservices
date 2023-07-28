@@ -1,0 +1,98 @@
+.servicesHead {
+    /* color: white; */
+    text-align: center;
+    background: linear-gradient(90deg, #00B894, #00D9A6);
+
+    font-size: 40px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 20px;
+  
+
+
+}
+.ServicesMainHome{
+    margin-bottom: 100px;
+}
+
+.allCards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.serviceNameHead{
+    background-color: #DDE6ED;
+    border-radius: 10px 10px 0 0  ;
+    text-align: center;
+}
+.serviceName{
+    padding: 10px;
+    margin: 0;
+    font-size: 23px;
+    font-weight:600;
+}
+.desc {
+    font-size: 18px;
+margin-top: 10px;
+}
+.card {
+    background-color: white;
+    margin: 20px;
+    /* display: flex; */
+    width: 60vw;
+    margin: auto;
+    border-radius: 10px;
+}
+.AllRightContent{
+    display: flex;
+    justify-content: center;
+ 
+    gap: 10px;
+}
+
+.rightContent {
+    padding: 0 20px;
+}
+
+.eachImg {
+    width: 500px;
+    padding: 10px;
+    border-radius: 20px;
+    height: 150px;
+}
+
+@media(max-width: 1000px) {
+    .eachImg {
+        width: 35vw;
+        padding: 10px;
+        height: 150px;
+        margin: auto;
+    }
+
+    .card {
+
+        width: 90vw;
+
+
+    }
+
+    .serviceName {
+        font-size: 18px;
+    }
+    .AllRightContent{
+        padding: 0 10px 10px 0;
+    }
+
+    .rightContent {
+        padding: 0;
+        padding-right: 5px;
+    }
+
+    .desc {
+        font-size: 13px;
+    }
+    .servicesHead {
+        margin-bottom: 20px;
+    }
+
+}
