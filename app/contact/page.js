@@ -17,7 +17,7 @@ const [loading, setLoading] = useState(false)
     const data = { name, email, phone, sub, desc }
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/api/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
 
         body: JSON.stringify(data),
