@@ -42,7 +42,7 @@ console.log()
   // 
   const baseUrl = "localhost:3000"
   try {
-    let data = await fetch(`http://localhost:3000/api/servicefetch`);
+    let data = await fetch(`/api/servicefetch`);
     let allServices = await data.json();
 
     return allServices;
