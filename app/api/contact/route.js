@@ -21,11 +21,8 @@ function generateEmailContent(data) {
     }
 }
 export async function POST(req, res) {
-
     if (req.method === "POST") {
         const data = await req.json();
-   
-
         try {
             await transporter.sendMail({
                 ...options,

@@ -2,9 +2,8 @@
 import styles from "../../styles/contact.module.css"
 import Location from "@/app/location/page"
 import { useState } from "react"
-
 import { useRouter } from 'next/navigation';
-import {ContactFetch} from "@/lib/ContactFetch"
+import { ContactFetch } from "@/lib/ContactFetch"
 export default function Contact() {
   const router = useRouter();
   const baseUrl = router.basePath;
@@ -20,18 +19,7 @@ export default function Contact() {
     const data = { name, email, phone, sub, desc }
     e.preventDefault();
     try {
-     await ContactFetch(data);
-      // const response = await fetch(`${baseUrl}/api/contact`, {
-      //   method: "POST",
-
-      //   body: JSON.stringify(data),
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //     "Accept": "application/json"
-      //   }
-      // });
-
-      // const result = await response.text();
+      await ContactFetch(data);
       setLoading(false)
       setStatus(true)
       setTimeout(() => {
