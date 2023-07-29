@@ -4,6 +4,7 @@
     margin: 0 80px;
     color: white;
     transition-duration: 0.3s;
+
    
 }
 
@@ -34,12 +35,12 @@
 
 .myNav .ul li {
     list-style: none;
-
+  
 }
 
 .myNav .ul {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     align-items: center;
     background-color: #008000;
     height: 50px;
@@ -47,11 +48,13 @@
     padding: 0 15px;
     position: fixed;
     justify-content: c;
-    top: 1vh;
+    top: 2vh;
+    justify-content: center;
     right: 2vw;
     /* width: 400px;   */
  margin-bottom: 100px;
     z-index: 2;
+ 
 
 }
 
@@ -81,7 +84,7 @@ right: auto;
     }
 
     .myNav .ul a {
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 
@@ -90,6 +93,6 @@ right: auto;
 
 
     .myNav .ul {
-        gap: 30px;
+        gap: 20px;
     }
 }
