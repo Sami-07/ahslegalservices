@@ -1,5 +1,8 @@
+// "use client"
 import styles from "../../styles/services.module.css"
 import Image from "next/image"
+import { useRouter } from 'next/navigation';
+
 export const metadata = {
   title: 'Services at AHS Legal Services',
   description: 'Legal Services Undertaken Civil Court Cases Property Documents Verification and Advice Rentals and Business Agreements Drafting Muslim Law Cases Succession & Legal Heir Certificate Cases Family Court Divorce Maintenance & Guardianship Cases Writ Petitions and other Cases of High Court Police FIR & Chargesheet Quash Bail Consumer Forum Cases Service Law Recruitment/Selection Disputes Departmental Enquiry Industrial Disputes Workman/Compensation Admission Fee Documents Return disputes with Educational Institutions and any other Legal matter and issue of notices',
@@ -15,7 +18,7 @@ export default async function Services() {
         {parsedServices.map((service) => {
 
           let imagePath = `/images/${service.image}.jpg`;
-         
+
           return (
             <div className={styles.card} data-aos="fade-up" key={service.image}>
               <div className={styles.serviceNameHead}>
@@ -35,8 +38,11 @@ export default async function Services() {
   )
 }
 export async function getServices() {
+console.log()
+  // 
+  const baseUrl = "localhost:3000"
   try {
-    let data = await fetch("/api/servicefetch");
+    let data = await fetch(`http://localhost:3000/api/servicefetch`);
     let allServices = await data.json();
 
     return allServices;

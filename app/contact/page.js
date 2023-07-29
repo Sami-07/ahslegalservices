@@ -3,31 +3,35 @@ import styles from "../../styles/contact.module.css"
 import Location from "@/app/location/page"
 import { useState } from "react"
 
-
+import { useRouter } from 'next/navigation';
+import {ContactFetch} from "@/lib/ContactFetch"
 export default function Contact() {
+  const router = useRouter();
+  const baseUrl = router.basePath;
   const [name, setName] = useState("")
   const [phone, setPhone] = useState("")
   const [email, setEmail] = useState("")
   const [sub, setSub] = useState("")
   const [desc, setDesc] = useState("")
   const [status, setStatus] = useState(false)
-const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false)
   async function handleSubmit(e) {
     setLoading(true)
     const data = { name, email, phone, sub, desc }
     e.preventDefault();
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
+     await ContactFetch(data);
+      // const response = await fetch(`${baseUrl}/api/contact`, {
+      //   method: "POST",
 
-        body: JSON.stringify(data),
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        }
-      });
+      //   body: JSON.stringify(data),
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //     "Accept": "application/json"
+      //   }
+      // });
 
-      const result = await response.text();
+      // const result = await response.text();
       setLoading(false)
       setStatus(true)
       setTimeout(() => {
@@ -69,7 +73,7 @@ const [loading, setLoading] = useState(false)
           </div>
           <form onSubmit={handleSubmit} className={styles.contactCol2}>
             <div className={styles.subCol2}>
-         
+
               <input type="text" placeholder="Your Name" name="user_name" onChange={e => setName(e.target.value)} value={name}></input>
 
               <input type="email" placeholder="Email" name="user_email" onChange={e => setEmail(e.target.value)} value={email}></input>
