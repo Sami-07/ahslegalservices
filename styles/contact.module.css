@@ -36,7 +36,7 @@
 .contactCol1 {
     background-color: #008000;
     width: 350px;
-    height: 500px;
+    height: 550px;
     border-radius: 20px 0 0 20px;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
     padding: 20px;
@@ -61,7 +61,7 @@
     background-color: #FBEAFF;
     background-color: white;
     width: 700px;
-    height: 500px;
+    height: 550px;
     border-radius: 0 20px 20px 0;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
     /* padding-top: 10px; */
@@ -119,6 +119,7 @@
     display: grid;
     grid-gap: 10px;
     grid-template-rows: 60px;
+   
 }
 
 
@@ -177,9 +178,9 @@
 
     .subCol2 {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
         grid-gap: 0px;
-        grid-template-rows: 60px 60px;
+        grid-template-rows: 60px 60px 60px;
     }
 
     /* .contactCol2 input {
@@ -192,7 +193,7 @@ margin: 0;
     }
 
     .contactCol2 input {
-        width: 120px;
+        /* width: 120px; */
     }
 }
 
@@ -211,6 +212,6 @@ margin: 0;
     }
 
     .contactCol2 {
-        height: 520px;
+        height: 600px;
     }
 }
