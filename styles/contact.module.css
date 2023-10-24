@@ -20,7 +20,7 @@
     opacity: 0.7;
     color: white;
 
-    padding: 0 20px;
+    padding: 20px 20px;
 }
 
 .contactBox {
@@ -36,10 +36,10 @@
 .contactCol1 {
     background-color: #008000;
     width: 350px;
-    height: 450px;
+    height: 500px;
     border-radius: 20px 0 0 20px;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
-    padding: 10px 20px 10px 10px;
+    padding: 20px;
 
 
 }
@@ -61,11 +61,11 @@
     background-color: #FBEAFF;
     background-color: white;
     width: 700px;
-    height: 450px;
+    height: 500px;
     border-radius: 0 20px 20px 0;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
     /* padding-top: 10px; */
-    padding: 10px 20px;
+    padding:20px;
 
 }
 

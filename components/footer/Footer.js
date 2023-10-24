@@ -45,7 +45,7 @@ export default function Footer() {
 
             <p className={styles.copyRight}>AHS Legal Services copyright &copy; {newYear} All rights reserved.</p>
             <p className={styles.creator}>
-                Website designed and created by <a href="https://www.linkedin.com/in/shaikh-abdul-sami-879287211/">
+                Website designed and created by <a style={{textDecoration: "underline"}} href="https://www.linkedin.com/in/shaikh-abdul-sami-879287211/">
                     <br /> Shaikh Abdul Sami</a>
 
             </p>
